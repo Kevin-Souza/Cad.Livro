@@ -1,3 +1,5 @@
+using Cad.Livros;
+
 namespace Cad.Livros
 {
     public class Livros : EntidadeBase
@@ -10,7 +12,7 @@ namespace Cad.Livros
         private bool Excluido {get; set;}
 
         // Métodos
-		public Livro(int id, Genero genero, string titulo, string descricao, int ano)
+		public Livros(int id, Genero genero, string titulo, string descricao, int ano)
 		{
 			this.Id = id;
 			this.Genero = genero;
@@ -27,7 +29,7 @@ namespace Cad.Livros
             retorno += "Gênero: " + this.Genero + Environment.NewLine;
             retorno += "Titulo: " + this.Titulo + Environment.NewLine;
             retorno += "Descrição: " + this.Descricao + Environment.NewLine;
-            retorno += "Ano de Início: " + this.Ano + Environment.NewLine;
+            retorno += "Ano de Publicação: " + this.Ano + Environment.NewLine;
             retorno += "Excluido: " + this.Excluido;
 			return retorno;
 		}

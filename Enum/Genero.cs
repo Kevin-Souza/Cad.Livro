@@ -1,4 +1,4 @@
-namespace Cad.Livros.Enum
+namespace Cad.Livros
 {
     public enum Genero
     {
